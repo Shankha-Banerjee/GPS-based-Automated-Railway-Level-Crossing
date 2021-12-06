@@ -1,0 +1,124 @@
+\documentclass{llncs}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+
+\title{LaTeX Template for Your LNCS Paper}
+
+\author{Author 1, Author 2}
+
+\institute{Lab, University, Address}
+\maketitle
+
+\begin{abstract}
+
+Due to the ability to reduce unwanted accidents, automatic railway level crossing is gaining popularity in modern transportation system. Many systems have been proposed and tested to achieve the desired automation, none of which has been considered a standard. Global positioning system is an effective and fast mode of communication and may be considered as an accurate tool to determine one’s navigation information. Present work proposes an algorithm to automate the railway level crossing which works based on global positioning system data. Unlike other systems, proposed algorithm does not require installation of trackside hardware and thus reduces maintenance cost by avoiding issues such as continuous monitoring and protection against vandalism.\\
+
+\end{abstract}
+
+\section{Introduction}\label{sec:Introduction}
+
+Indian Railway is most commonly used largest and busiest transportation system in India. Every day Indian Railway use to carry $22$ million passengers. Simultaneously, it is also one of those modes of transportation which has to face high challenges in its daily job due to human error, such as derailments, railway collision, level crossing accidents. One of the most frequent accidents are found to be in railway level crossings. A railway level crossing is an intersection of road and railway track where human coordination is required to conduct an accident free journey of both railway and road transport, lack of which sometimes few major accidents took place effecting both railway and road transportation systems.
+
+Indian Railway uses a system where all the level crossing gates are controlled manually by the gatekeepers. These gatekeepers receive their instructions time to time through telephonic conversation from nearest cabin rooms associated with them ~\cite{b1}. This may result inadequate or erroneous information leading to some unwanted accidents. The rate of human error that could occur in these level crossings are high due to lack of actual knowledge, information and proper coordination with time. The human error such as  delay in informing to the gatekeeper about the arrival of the train, delay in the gate operation by the gate keeper, obstacle stuck in the level cross, delay in opening and closing of level crossing gates may result to some miscellaneous accidents. 
+
+In recent times, a new approach towards Unmanned Level Crossing(ULC) system has been introduced in Indian railway transportation system. The ideology is based on some hardware components, where two blinkers and a siren has been used to alert people when the train is within one kilometer of radius of the level crossing ~\cite{b2}. Such system uses some micro controller and other hardwares which have been placed at a certain distance from the level crossing for observing an approaching train. The main problem coming out of such systems is about vandalism to the installed hardwares, which is also effecting railways economy as well as increasing the rate of accidents in railway transportation system.
+
+The present work is an attempt towards designing and implementation of a system for unmanned level crossing. It also includes no extra hardware installation, which reduces the risk of vandalism. This system also provides a better level of safety and security to both railway and roadway passengers. In this proposed method Global Positioning System(GPS) has been taken into consideration for detecting a railway vehicle approaching towards the level crossing within a short span of time. Based on this it also controls automatic opening and closing operation of level crossing gates. It also aims toward reduction of total time taken in gate operation at any level crossing and ensures the safety of the passengers at the level crossing when the train passes. \\
+
+The organization of the work is as follows. After this brief introduction, the required related work for this topic is presented in Section ~\ref{sec:back}. This includes a brief discussion about Indian Railway level crossing operations, Advanced Train Safety System (ATSS) and Unmanned Level Crossing (ULC). Problem setup with an emphasis of proposed algorithm is presented in Section ~\ref{sec:problem}. The proposed algorithm with a flowchart and with a proper discussion for this particular problem is described in Section ~\ref{sec:soln}. Section ~\ref{sec:conclusion} concludes this study with some advantages of this proposed system and provides a direction towards future work.  
+\\
+
+\section{Literature Survey}\label{sec:Back}
+
+With an increase in railway passengers and trains, the whole railway network is becoming very crucial part of every persons daily life. At the same time, railway also has to accustom with one of the most important and heavily used modes of transportations i.e, road transport. Every railway network has to face hundreds of level crossing during its journey from source to destination. These level crossings supports to a smooth journey for both rail and road transportation system. At the same time it also generates a high time delay to both the modes of transportation due to manual controlling of level crossings.
+
+In India, level crossings has been controlled manually since the time tracks were laid on ground. This system involves a person known as gatekeeper associated with every single level crossing who actually controls the gate operation in it. These gatekeepers were directed from a nearest cabin room over a telephonic conversation. This systems are definitely risky for such a tight scheduled transportation system as it can introduce many human errors such as delay in information about the train, delay in the gate operation, obstacle stuck in the level cross, delay in opening and closing of level crossing gates due to inadequate or erroneous information which may lead to miscellaneous accidents. 
+
+Previous related work ~\cite{b3,b4,b5,b6} demonstrates about the Advanced Train Safety System (ATSS). It has been defined that during the process of developing ATSS, a fault tolerance method has been applied for both the hardware and the software components. ALC systems has been successively implemented in Korea in the year 2000. It has reduced the rate of accidents at level crossings since then. 	In ~\cite{b6}, the disadvantages of manually operated railway signals and railway warnings at level crossings are described in details. Described in ~\cite{b5}, about the railway auto control system using OGSi and JESS. The state of railway cross has been estimated by JESS methodology. The different ways by which a locomotive pilot can avoid accidental situations and necessary measures to be taken in level crossings are discussed.
+
+Modern methodology like Automatic level Crossing (ALC) or Unmanned Level Crossing (ULC) has been introduced to Indian railways where level crossings are controlled by micro controllers and sensors for detection of approaching trains to the level crossing. These system need few high price sensors and hardwares. Such systems may perform properly but it has some disadvantages like failure of system, breakage of hardware model and some vandalism issue. At such point, the whole system will definitely fail and may or may not produce a correct estimation  leading to major accidents.   
+
+The present work is a proposed solution for ULC using a GPS system which is a wireless radio navigation and positioning system which uses satellite data to identify the correct position, distance and velocity of a train or a body. GPS can be considered for detection of a railway vehicle approaching towards the level crossing within a short span of time.\\ 
+
+\section{Problem Statement}
+
+The current control system for railway level crossings is completely dependent on railway signaling and manual effort behind it. This generally involves a large complication and risk to both roadway and railway transportation system. Such manual control also increases the time delay in level crossings and may sometimes risk the safety of the passengers. The current intelligent system for ULC is based on some extra hardware installation and adaptation of new control systems with some modern methodologies which is very cost effective and also invokes a risk of vandalism and damage issues to such hardware which may cause uncertain results and accidents thereafter. This systems are very expensive and may become a hindrance towards its real time implementation. To facilitate the practical implementation of an Unmanned Railway Level Crossing, a new algorithm towards this problem has been prepared.\\
+
+\section{Proposed Solution}
+\label{sec:soln}
+\subsection{Proposed Algorithm}
+
+The flowchart design of proposed algorithm for Unmanned Level Crossing has been described below.
+
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=9cm,height=8.5cm]{Algo}}
+	\caption{Flowchart for working of Unmanned Level Crossing }
+	\label{fig:algo}
+\end{figure}
+
+\subsection{Discussion}
+
+The proposed solution for Unmanned Level Crossing considers no extra hardware installation on level crossing or along the track side. The whole system is completely operated only through GPS.
+
+For this proposed solution, the system has been provided with actual and fixed GPS location ( latitude and longitude) of the level crossing. The GPS system will keep tracking of any moving body within its range of circle. The GPS system will calculate the distance of an moving object using a coordinate geometry formula.\\
+
+
+$ \hspace{1.5cm} d= \sqrt{( x_{2}- x_{1})^{2}+ ( y_{2}- y_{1})^{2}}\\$
+
+
+Where, $d$ is the calculated distance between the train and the level crossing. Here, ($x_{1}$,$y_{1}$) are the fixed longitude and latitude of the level crossing and ($x_{2}$,$y_{2}$) are the latitude and longitude of the moving train which is changing with respect to train velocity and time resulting in increment or decrement of the distance.
+Whenever the system starts it will first check the current position of the level crossing gates. For this checking two condition of open and close has been provided. On completion of this step it will work accordingly. If the system founds the gate to be open then, the GPS will check for any moving body within its range . On founding any moving object, it will start calculating the distance between those two coordinates using distance formula and check if distance is less than or equals to $1km$. If so, then the system will activate the siren and will close the gate. If the systems founds the calculated distance not less than or equal to $1km$ it will keep the gate open . After completing these steps it will again check for the condition of gates open or closed.
+
+Now, this time the system will found the gates to be closed. It will now again move to the distance checking part where it will check the distance to be greater than or equal to $1km$. If so it will deactivate the siren at level crossing and will open the gate. If the system founds the calculated distance not greater than or equals to $1km$ it will keep the gates closed. After completing all the four conditions, every time the sytem will start checking from its first stage.\\
+
+\subsection{Comparision with other proposed systems}
+
+\begin{table}[htbp]
+	\caption{OTHER PROPOSED SOLUTIONS TOWARDS ULC}
+	\begin{center}
+		\resizebox{.5\textwidth}{!}{%
+			\begin{tabular}{|p{1.2cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+				\hline
+				\vspace{0.1cm}\textbf{Serial No.}&\vspace{0.02cm}\hspace{0.02cm}\textbf{Hardwares Used}&\vspace{0.01cm}\hspace{.3cm}\textbf{Merit}&\vspace{0.01cm}\hspace{.2cm}\textbf{Demerit}
+				\\\hline	
+				\centering\vspace{0.1cm}1.&Arduino, sensors, server, internet, database, HD camera&Not dependent on a single hardware&Risk of server down or internet problem, Vandalism issue\\\hline	
+				\centering\vspace{0.2cm}2. &GSM-Modem, GPS, Alarm, ARM7TMD, Micro-controller&Quick data transfer, High instruction throughput&Risk of no GSM signal, No proper security of micro-controller\\\hline
+				\centering\vspace{0.2cm}3.&Wheel detecting sensor, Vibration sensor, IR sensor, LDR, Arduino UNO&Proper scheduled work of hardware, Quick response time, Vandalism issue& IRsensor can detect any obstacle, noise feeded vibration results\\\hline
+				\centering\vspace{0.2cm}4.&LCD screen, Zigbee, Motor driver, APR9600 speaker driver&Organized time fitted to control Level crossing&  Zigbee systems are not secured, Limited coverage of communication.\\\hline
+			\end{tabular}
+		}
+		\label{tabMeans}
+	\end{center}
+\end{table}
+
+
+\section{Concluding Remarks}\label{sec:Conclusion}
+
+An algorithm for GPS based Unmanned Railway level Crossing system for Indian Railway has been proposed. The designed algorithm consists of a GPS system through which the arrival or departure of a railway vehicle has been detected for a particular level crossing. Previously few attempts were made towards ULC but those systems are designed depending upon some micro controllers and sensors. The effectiveness of this proposed algorithm has been explored by calculating total time from a existing level crossing by recording time from closing to opening of a level crossing gate. 
+
+The proposed algorithm lays an emphasis on reducing the actual stoppage time in a level crossing which used to cause due to some manual delay or negligence. One of the most important advantages of this proposed algorithm is providing a safe guard against vandalism as this system dose not require any extra hardware installation. It is also a cost effective system that can be easily implemented in low specification systems. At the same time, public safety at these intersections of railway tracks and level crossing can be increased.
+
+Real time experiments by implementing such systems need to carry out and may need few modifications based on the nature of level crossing. Also some internal technical fault may affect these unmanned level crossing system in some adverse situation which needed to be handle with proper system design. All these issues are crucial and calls for some further research work in this feild.\\ 
+
+
+
+\begin{thebibliography}{1}
+
+\bibitem{b1} Ministry of Railways, GOI, ``LESSON PLAN FOR TRAINING OF GATE-KEEPER'', CAMTECH/2002/C/G-KEEPER/1.0,November - 2002.\\
+\bibitem{b2} Available:``https://timesofindia.indiatimes.com/india/Indian-Railway-develops-warning-system-for-unmanned-level-crossings/articleshow/49524648.cms'', Times Of India, 2015.\\
+\bibitem{b3} Pradeep Raj, ``“Increasing accidents in the unmanned level crossing of the railways”'', 2012.\\
+\bibitem{b4} Xishi Wang, Ning Bin, and Cheng Yinhang, ``A new microprocessor based approach to an automatic control system.'', International Symposium on Industrial Electronics, pp. 842-843, 1992.\\
+\bibitem{b5} Jeong Y., Choon-Sung Nam, Hee-Jin Jeong, and Dong Shin, ``Train Auto Control System based on OSGi'', International Conference on Advanced Communication Technology, pp.276-279, 2008.\\
+\bibitem{b6} Atul Kumar Dewangan, Meenu Gupta, and Pratibha Patel, ``Automation of Railway Gate Control Using Micro-controller'', International Journal of Engineering Research \& Technology, pp.1-8, 2012.\\
+
+\end{thebibliography}
+
+\end{document}
